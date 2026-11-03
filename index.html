@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amit Kumar - Computer Science Engineering student, aspiring Software Engineer and web developer.">
+    <meta name="theme-color" content="#090914">
+
+    <title>Amit Kumar | Aspiring Software Engineer</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%237c5cff'/%3E%3Ctext x='50' y='65' font-size='42' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EAK%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        try {
+            const savedTheme = localStorage.getItem("portfolio-theme");
+            if (savedTheme === "light" || savedTheme === "dark") {
+                document.documentElement.setAttribute("data-theme", savedTheme);
+            }
+        } catch (error) {
+            console.warn("Theme preference could not be loaded.");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">AK<span>.</span></div>
+    </div>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Amit<span>.</span></a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+                <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero container" id="home">
+
+            <div class="hero-content reveal">
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Open to learning & opportunities
+                </div>
+
+                <p class="hero-intro">HELLO, I'M</p>
+
+                <h1>Amit <span>Kumar.</span></h1>
+
+                <h2>
+                    I'm an <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    A Computer Science Engineering student passionate about
+                    technology, web development and solving problems through code.
+                    Currently building my skills to become a better Software Engineer.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work <span>↗</span>
+                    </a>
+
+                    <a href="assets/Amit_Kumar_Resume.pdf"
+                        class="btn btn-outline" target="_blank" rel="noopener">
+                        View Resume ↓
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/amitkumar220108"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/amitkumar9034/"
+                        target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a href="mailto:amitkumar141623@gmail.com">Email ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="floating-tag tag-one">C++</div>
+                <div class="floating-tag tag-two">HTML / CSS</div>
+                <div class="floating-tag tag-three">JavaScript</div>
+
+                <div class="profile-card">
+                    <div class="card-top">
+                        <span>PORTFOLIO / 2026</span>
+                        <span class="online-dot"></span>
+                    </div>
+
+                    <div class="profile-avatar">AK</div>
+
+                    <h3>Amit Kumar</h3>
+                    <p>Computer Science Student</p>
+
+                    <div class="profile-divider"></div>
+
+                    <div class="profile-info">
+                        <div>
+                            <strong>11</strong>
+                            <span>LEET AIR</span>
+                        </div>
+                        <div>
+                            <strong>9.34</strong>
+                            <span>CGPA</span>
+                        </div>
+                        <div>
+                            <strong>MAIT</strong>
+                            <span>INSTITUTE</span>
+                        </div>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span>Delhi, India</span>
+                        <span>✦</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span></span> Scroll to explore
+            </a>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section container" id="about">
+            <div class="section-heading reveal">
+                <span class="section-label">01 / ABOUT ME</span>
+                <h2>A little about <span>myself.</span></h2>
+                <p>Getting better, one line of code at a time.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-main glass-card reveal">
+                    <span class="card-label">WHO AM I?</span>
+
+                    <h3>Learning. Building. <span>Improving.</span></h3>
+
+                    <p>
+                        I'm Amit Kumar, a Computer Science Engineering student
+                        at Maharaja Agrasen Institute of Technology (MAIT),
+                        pursuing B.Tech through lateral entry.
+                    </p>
+
+                    <p>
+                        I completed my Diploma in Computer Engineering from
+                        Ambedkar DSEU, Shakarpur Campus-I, with a CGPA of 9.34.
+                    </p>
+
+                    <p>
+                        I have a foundation in C, C++, Python, HTML and CSS.
+                        Currently, I'm learning JavaScript, exploring the MERN
+                        stack and practising Data Structures and Algorithms using C++.
+                    </p>
+                </div>
+
+                <div class="about-side reveal">
+                    <div class="glass-card mini-card">
+                        <span class="mini-icon">🎯</span>
+                        <h3>My Goal</h3>
+                        <p>To grow as a skilled Software Engineer.</p>
+                    </div>
+
+                    <div class="glass-card mini-card">
+                        <span class="mini-icon">💻</span>
+                        <h3>My Focus</h3>
+                        <p>Development, DSA and continuous learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section container" id="education">
+            <div class="section-heading reveal">
+                <span class="section-label">02 / EDUCATION</span>
+                <h2>My academic <span>journey.</span></h2>
+                <p>The foundation behind my learning.</p>
+            </div>
+
+            <div class="education-grid">
+                <div class="education-card glass-card reveal">
+                    <span class="education-date">2026 — Present</span>
+                    <div class="education-icon">🎓</div>
+                    <h3>B.Tech — Computer Science & Engineering</h3>
+                    <p>Maharaja Agrasen Institute of Technology (MAIT)</p>
+                    <span class="education-status">Currently Pursuing</span>
+                </div>
+
+                <div class="education-card glass-card reveal">
+                    <span class="education-date">2023 — 2026</span>
+                    <div class="education-icon">💻</div>
+                    <h3>Diploma — Computer Engineering</h3>
+                    <p>Ambedkar DSEU, Shakarpur Campus-I</p>
+                    <span class="education-status">CGPA: 9.34</span>
+                </div>
+
+                <div class="education-card glass-card reveal">
+                    <span class="education-date">2022 — 2023</span>
+                    <div class="education-icon">📚</div>
+                    <h3>Class X — CBSE</h3>
+                    <p>Rajkiya Sarvodaya Bal Vidyalaya</p>
+                    <span class="education-status">Percentage: 71%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section container" id="skills">
+            <div class="section-heading reveal">
+                <span class="section-label">03 / MY SKILLS</span>
+                <h2>Technologies I <span>work with.</span></h2>
+                <p>My current technical toolkit.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">⌨</div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span>C</span><span>C++</span><span>Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Currently Learning</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span><span>MERN Stack</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">🛠</div>
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span>Git</span><span>GitHub</span><span>VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">🧠</div>
+                    <h3>Problem Solving</h3>
+                    <div class="skill-tags">
+                        <span>DSA with C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section container" id="projects">
+            <div class="section-heading reveal">
+                <span class="section-label">04 / MY WORK</span>
+                <h2>Selected <span>projects.</span></h2>
+                <p>A few things I've built while learning.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-index">01</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <h3>Todo App</h3>
+                    <p>A task management application to add, manage and track daily tasks using JavaScript.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/amitkumar220108/Todo-App-Using-JavaScript"
+                           target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-index">02</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <h3>Guess The Number</h3>
+                    <p>An interactive number guessing game built with JavaScript and basic game logic.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/amitkumar220108/Guess-The-Number-Game-Using-JavaScript"
+                           target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-index">03</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <h3>Spotify UI Clone</h3>
+                    <p>A frontend recreation of Spotify's interface, focusing on layout and visual design. No music playback functionality.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>UI Design</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-index">04</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <h3>Amazon UI Clone</h3>
+                    <p>A frontend recreation of an e-commerce interface with a shopping-focused layout.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>UI Design</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-index">05</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <h3>Netflix UI Clone</h3>
+                    <p>A frontend recreation of a streaming platform interface with a responsive visual layout.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>UI Design</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-index">06</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <h3>Sidebar Menu</h3>
+                    <p>A sidebar navigation component created using HTML and CSS.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/amitkumar220108/Sidebar-Menu"
+                           target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section class="section container" id="achievements">
+            <div class="section-heading reveal">
+                <span class="section-label">05 / MILESTONES</span>
+                <h2>Things I'm <span>proud of.</span></h2>
+                <p>Milestones from my academic journey.</p>
+            </div>
+
+            <div class="achievement-grid">
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>AIR 11</h3>
+                    <p>GGSIPU LEET 2026</p>
+                </div>
+
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon">🎓</div>
+                    <h3>9.34 CGPA</h3>
+                    <p>Diploma in Computer Engineering</p>
+                </div>
+
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon">🤝</div>
+                    <h3>LEET Instructor</h3>
+                    <p>Think Insider</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section container" id="contact">
+            <div class="section-heading reveal">
+                <span class="section-label">06 / GET IN TOUCH</span>
+                <h2>Let's build something <span>together.</span></h2>
+                <p>Have an opportunity or just want to connect?</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info glass-card reveal">
+                    <span class="card-label">CONTACT DETAILS</span>
+                    <h3>Let's start a conversation.</h3>
+                    <p>I'm always interested in learning, collaborating and connecting with people in the tech community.</p>
+
+                    <div class="contact-item">
+                        <span>✉</span>
+                        <div>
+                            <small>Email</small>
+                            <a href="mailto:amitkumar141623@gmail.com">amitkumar141623@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>in</span>
+                        <div>
+                            <small>LinkedIn</small>
+                            <a href="https://www.linkedin.com/in/amitkumar9034/"
+                               target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>⌘</span>
+                        <div>
+                            <small>GitHub</small>
+                            <a href="https://github.com/amitkumar220108"
+                               target="_blank" rel="noopener noreferrer">View my GitHub Profile ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>LC</span>
+                        <div>
+                            <small>LeetCode</small>
+                            <a href="https://leetcode.com/u/amitkumar9034/"
+                               target="_blank" rel="noopener noreferrer">View my LeetCode Profile ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card reveal" id="contactForm">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" class="honeypot"
+                        tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        Send Message <span>↗</span>
+                    </button>
+
+                    <p id="formStatus" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo">Amit<span>.</span></a>
+            <p>Designed & Developed by Amit Kumar</p>
+            <p>© <span id="year"></span> Amit Kumar</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
